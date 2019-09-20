@@ -1,0 +1,238 @@
+body {
+    background-color: aliceblue;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 100%;
+    font-size: 16px;
+    
+  }
+
+.content-area {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px #666;
+    padding: 20px;
+    transition: all 0.2s;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    margin: auto;
+    
+}
+.content-photo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-style: solid;
+    border-radius: 10px;
+    height: 10rem;
+    
+}
+.content-education {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-style: solid;
+    border-radius: 10px;
+    height: auto;
+    padding: 20px;
+    
+}
+.title {
+    padding: 0.1px;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+    background: red;
+}
+.content-timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+.content-timeline:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border: 2px solid black;
+    background: #fff;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    z-index: 1;
+}
+.content-timeline:after {
+    content: "";
+    border: 2px solid black;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0.6rem;
+    z-index: 0;
+}
+.content-timeline:last-child:after {
+    content: none;
+}
+.content-timeline-date {
+    position: relative;
+    padding-left: 2.5rem;
+    
+}
+.content-timeline-date:before{
+    content: "";
+    border: 2px solid #666;
+    height: 70%;
+    position: absolute;
+    top: 1.7rem;
+    left: 3.8rem;
+    z-index: 0;
+}
+.content-timeline-date:after {
+    content: "";
+    border: 2px solid #666;
+    width: 4%;
+    position: absolute;
+    margin-top: 3.5rem;
+    left: 3.8rem;
+    z-index: 0;
+}
+.content-timeline-date span {
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    background: #666;
+    padding: .2rem .4rem;
+    margin: -8px 0 1rem 0;
+    font-size: 1rem;
+}
+.school {
+    flex: 1;
+}
+.school h5 {
+    padding-left: 90px;
+}
+.school p {
+    margin: 0px 5px 20px 40px;
+    padding-left: 4rem;
+}
+
+.content-info {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+}
+.content-contact {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 30px;
+    border-style: solid;
+    border-radius: 10px;
+    height: auto;
+    
+}
+.content-skill {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+}
+.content-language {
+    grid-column-start: 2;
+    grid-column-end: 4; 
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+}
+hr {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+@media only screen and (max-width: 500px){
+    .content-area {
+        background-color: blue;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1em;
+        height: auto;
+        margin: auto;
+    }
+    .content-photo {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border-style: solid;
+        border-radius: 10px;
+        height: auto;
+        padding: 20px;
+        
+    }
+    .content-education {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        border-style: solid;
+        border-radius: 10px;
+        height: auto;
+        padding: 20px;
+    }  
+    .content-info {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 20px;
+        height: auto;
+    }
+    .content-contact {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-style: solid;
+        border-radius: 10px;
+        height: auto;
+        padding: 20px;
+    }
+    .content-skill {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 20px;
+        height: auto;
+    }
+    .content-language {
+        grid-column-start: 1;
+        grid-column-end: 4; 
+        grid-row-start: 6;
+        grid-row-end: 7;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 20px;
+        height: auto;
+    }
+}
