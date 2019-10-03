@@ -1,3 +1,21 @@
-![Image](https://uppic.cc/d/5kVw)
+<!DOCTYPE html>
+<html>
 
-Format: ![Alt text](https://uppic.cc/d/5kVw)
+  <head>      
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> Template </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+  </head>    
+ 
+  <body>
+  
+  ![Image](https://images.unsplash.com/photo-1501780392773-287d506245a5?auto=format&fit=crop&w=1950&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D)
+
+  Format: ![Alt Width 1920](url)
+
+  <!-- details -->
+  
+  </body>
+</html>
