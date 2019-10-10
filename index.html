@@ -8,9 +8,6 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -18,7 +15,7 @@
 </head>
 <body>
     
-    <!-------------------- Header Section ------------------->
+    <!-------------------- Home Section ------------------->
     <section id="header">
         <div class="container text-center">
             <div class="user-box">
@@ -35,32 +32,21 @@
     </section>
     <!-------------------- Navbar Section ------------------->
     <section id="Navbar">
-        <div class="nav-bar">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#header">MisterGot</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                    <a class="nav-link" href="#header">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#resume">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skill">Skill</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                </div>
-            </nav>
+        <div class="sticky">
+            <div class="navbars">
+                <a href="#" class="logo">MisterGot</a>
+                <div class="menu-toggle"></div>
+                <nav>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </div>
         </div>
     
     <!-------------------- About Section ------------------->
@@ -113,7 +99,7 @@
         <div class="resume" id="resume">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-md-12 col-lg-6">
                         <h1 class="text-center">My Education</h1>
                         <ul class="timeline">
                             <li>
@@ -146,7 +132,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-md-12 col-lg-6">
                         <h1 class="text-center">My Apprentice</h1>
                         <ul class="timeline">
                             <li>
@@ -175,7 +161,7 @@
     
         <div class="skill container" id="skill">
             <div class="row">
-                <div class="col">
+                <div class="col-md-12 col-lg-6">
                     <h1 class="text-center">Skill</h1>
                     <div class="skills-bar">
                             <p>HTML5</p>
@@ -200,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-12 col-lg-6">
                     <h1 class="text-center">Language</h1>
                     <div class="skills-bar">
                             <p>THAI</p>
@@ -273,11 +259,15 @@
     </section>
 
     <!-------------------- js Section ------------------->
-    <script src="smooth-scroll.js"></script>
-    <script>
-	    var scroll = new SmoothScroll('a[href*="#"]');
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        var scroll = new SmoothScroll('a[href*="#"]');
+        
     </script>
-
-
 </body>
 </html>
