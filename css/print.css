@@ -84,5 +84,8 @@
         display: flex;
         justify-content: space-around;
     }
+    .contact-print p {
+        text-decoration: none;
+    }
 
 }
