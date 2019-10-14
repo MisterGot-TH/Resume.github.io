@@ -7,10 +7,10 @@
     <title>Resume</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 
 </head>
 <body>
@@ -239,8 +239,26 @@
                             <a href="http://line.me/ti/p/~Mistergotx" target="_blank">MisterGotx</a>
                         </div>
                     </div>
+                    <div class="contact-print">
+                        <div class="box-print">
+                            <i class="fa fa-phone"></i>
+                            <p>088-2369715</p>
+                        </div>
+                        <div class="box-print">
+                            <i class="fa fa-facebook-square"></i>
+                            <p>Got Thanakorn</p>
+                        </div>
+                        <div class="box-print">
+                            <i class="fab fa-line"></i>
+                            <p>Mistergotx</p>
+                        </div>
+                        <div class="box-print">
+                            <i class="fa fa-envelope"></i>
+                            <p>Thanakorn.kumchuen@hotmail.com</p>
+                        </div>
+                    </div>
                     <div class="download">
-                        <button type="button" class="btn btn-primary"><i class="fas fa-file-download"></i> Resume</button>
+                        <button type="button" class="btn btn-primary" id="printButton"><i class="fas fa-file-download"></i> Resume</button>
                     </div>
             </div>
         </div>
@@ -255,7 +273,7 @@
                 <span></span>
             </div>
         </div>
-    
+        
     </section>
 
     <!-------------------- js Section ------------------->
@@ -268,6 +286,7 @@
     <script type="text/javascript">
         var scroll = new SmoothScroll('a[href*="#"]');
         
+        window.print();
     </script>
 </body>
 </html>

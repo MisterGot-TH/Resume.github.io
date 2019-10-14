@@ -132,7 +132,6 @@ nav ul li a:hover {
 /*-------------------- About --------------------*/
 .about {
     padding-top: 50px;
-    
 }
 .about .row {
     margin: 0;
@@ -415,6 +414,13 @@ td:nth-child(2) {
 }
 .contact .download .btn:hover .fas {
     color: #0076FF;
+}
+
+.contact-print {
+    display: none;
+}
+.box-print i {
+    font-size: 16px;
 }
 
 
@@ -853,11 +859,5 @@ td:nth-child(2) {
     td:nth-child(2) {
         width: 70%;
         font-size: 18px;
-    }
-}
-
-@media print {
-    * {
-        background: red;
     }
 }

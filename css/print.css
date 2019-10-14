@@ -1,0 +1,87 @@
+@page {
+    size: A4;
+    margin: 1cm 2cm;
+    
+}
+
+@media print {
+    html, body {
+        font-size: 12pt;
+        color: #333;
+        width: 21cm;
+        height: 29.7cm;
+    }
+
+    #header,
+    .sticky,
+    .social-icons,
+    .footer,
+    .download {
+        display: none;
+    }
+
+    #about, #resume, #skill, #contact, .contact-print {
+        width: 100%;
+        margin: 0;
+        padding-top: 0;
+        background: #333;
+    }
+
+    #about .profile-img {
+        width: 300px;
+        height: 300px;
+    }
+    #about .col {
+        margin: 0;
+    }
+    #about h1 {
+        font-size: 24pt;
+    }
+    #about td:nth-child(1) {
+        font-size: 16pt;
+    }
+    #about td:nth-child(2) {
+        font-size: 14pt;
+    }
+
+    
+    #resume .col-md-12 {
+        width: 50%;
+    }
+    #resume h1 {
+        font-size: 24pt;
+    }
+    #resume .timeline li h4 {
+        font-size: 18pt;
+    }
+    #resume .timeline li h4 span {
+        font-size: 19pt;
+    }
+
+    
+    #skill .col-md-12 {
+        width: 50%;
+    }
+    #skill h1 {
+        font-size: 24pt;
+    }
+
+    #contact {
+        background: none;
+        margin-top: 10px;
+    }
+    #contact h1 {
+        font-size: 24pt;
+        margin-bottom: 10px;
+    }
+    #contact .box,
+    #contact .box .icon,
+    #contact .box .icon .conten {
+        display: none;
+    }
+    .contact-print {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
