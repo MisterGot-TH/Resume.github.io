@@ -7,6 +7,6 @@ $(document).ready(function(){
 })
 
 /*-------------------- print --------------------*/
-// document.querySelector("#printButton").addEventListener("click", function() {
-//     window.print();
-// });
+document.querySelector("#printButton").addEventListener("click", function() {
+    window.print();
+});
