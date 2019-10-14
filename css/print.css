@@ -10,6 +10,8 @@
         color: #333;
         width: 21cm;
         height: 29.7cm;
+        margin: 0;
+        padding: 0;
     }
 
     #header,
@@ -23,8 +25,7 @@
     #about, #resume, #skill, #contact, .contact-print {
         width: 100%;
         margin: 0;
-        padding-top: 0;
-        background: #333;
+        padding: 0;
     }
 
     #about .profile-img {
