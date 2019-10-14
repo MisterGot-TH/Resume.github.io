@@ -855,3 +855,9 @@ td:nth-child(2) {
         font-size: 18px;
     }
 }
+
+@media print {
+    * {
+        background: red;
+    }
+}
