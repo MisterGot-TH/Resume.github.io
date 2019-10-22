@@ -1,6 +1,4 @@
 # ธนกร คำชื่น ( Thanakorn Kumchuen )
 [Link Resume](https://mistergot-th.github.io/Resume.github.io/)
 
-<p align="center">
-	<img src="design/Web-1920.png" alt="Web">
-</p>
+![Image of Adobe XD](https://sv1.picz.in.th/images/2019/10/22/gdhpFa.jpg)
